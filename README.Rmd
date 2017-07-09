@@ -1,0 +1,35 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# dputtruncat
+
+The goal of dputtruncat is to ... demonstrate that dput output is truncated in some environments. 
+
+## Example
+
+
+```{r example}
+library(dputtruncat)
+## vector of characters
+v <- dput_grist()
+x <- setNames(runif(length(v), 1, 1000), v)
+
+dput(x)
+```
+
+```{r}
+devtools::session_info()
+```
