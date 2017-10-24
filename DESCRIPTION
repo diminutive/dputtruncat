@@ -1,10 +1,14 @@
 Package: dputtruncat
-Title: What the Package Does (one line, title case)
-Version: 0.0.0.9000
+Title: Demonstrate 'dput' Truncation
+Version: 0.0.1
 Authors@R: person("Michael", "Sumner", email = "mdsumner@gmail.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: A (hopefully) short-lived demonstration of a problem with 'dput' and friends. 
 Depends: R (>= 3.4.1)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr

@@ -7,8 +7,18 @@
 dput_grist(n = 25, left = 4, right = 8)
 }
 \arguments{
-\item{right}{}
+\item{n}{a number of numbers}
+
+\item{left}{smallest number}
+
+\item{right}{largest number}
+}
+\value{
+character vector
 }
 \description{
 An random assortment of characters.
+}
+\examples{
+dput_grist()
 }

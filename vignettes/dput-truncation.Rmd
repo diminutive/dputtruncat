@@ -1,0 +1,15 @@
+---
+title: "dput() and friends, truncated"
+author: "mdsumner@gmail.com"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{dput, truncated}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+```{r}
+set.seed(1); dput(sample(letters, 100, replace = TRUE))
+```

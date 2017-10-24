@@ -1,15 +1,16 @@
 #' Object to be dput-ed
 #'
 #' An random assortment of characters.
-#' @param n
-#' @param left
-#' @param right
+#' @param n a number of numbers
+#' @param left smallest number
+#' @param right largest number
 #'
-#' @return
+#' @return character vector
 #' @export
 #'
 #' @examples
+#' dput_grist()
 dput_grist <- function(n = 25, left = 4, right = 8) {
-  lapply(runif(n, left, right),
+  lapply(stats::runif(n, left, right),
          function(i) paste(sample(letters, i, replace = i > length(letters)), collapse = ""))
 }

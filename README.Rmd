@@ -14,6 +14,9 @@ knitr::opts_chunk$set(
 )
 ```
 
+
+[![Travis-CI Build Status](https://travis-ci.org/mdsumner/dputtruncat.svg?branch=master)](https://travis-ci.org/mdsumner/dputtruncat)
+
 # dputtruncat
 
 The goal of dputtruncat is to ... demonstrate that dput output is truncated in some environments. 
@@ -25,7 +28,7 @@ The goal of dputtruncat is to ... demonstrate that dput output is truncated in s
 library(dputtruncat)
 ## vector of characters
 v <- dput_grist()
-x <- setNames(runif(length(v), 1, 1000), v)
+x <- setNames(stats::runif(length(v), 1, 1000), v)
 
 dput(x)
 ```
